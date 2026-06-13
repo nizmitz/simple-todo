@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/nizmitz/simple-todo/todo"
 	"os"
+	"simple-todo/todo"
 )
 
 func main() {

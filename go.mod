@@ -1,3 +1,3 @@
-module github.com/nizmitz/simple-todo
+module simple-todo
 
 go 1.26.3
