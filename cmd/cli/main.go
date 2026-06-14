@@ -7,10 +7,8 @@ import (
 )
 
 func main() {
-	todo.LoadTasks()
-
 	if len(os.Args) < 2 {
-		fmt.Println("usage: todo add|list|done")
+		fmt.Println("usage: todo [serve|add|list|done]")
 		return
 	}
 
@@ -19,10 +17,13 @@ func main() {
 
 	switch cmd {
 	case "add":
+		todo.LoadTasks()
 		todo.Add(args)
 	case "list":
+		todo.LoadTasks()
 		todo.List()
 	case "done":
+		todo.LoadTasks()
 		todo.Done(args)
 	default:
 		fmt.Println("unknown command")
